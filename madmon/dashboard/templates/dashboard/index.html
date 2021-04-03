@@ -1,0 +1,121 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    {% load static %}
+    <link rel="stylesheet"  href="{%  static  'css/style.css'  %}"/>
+</head>
+
+<body>
+    <div id="ecs"> <!-- div end of ecs block-->
+    <h1>Welcome to the ECS Dashboard</h1>
+
+
+<table id="service_table" border = "1" cellpadding ="1" cellspacing = "1" style="width:75%"> 
+
+<thead>
+<div id="service_table_heading">
+<tr>
+    <th style="text-align:left">Name</th>
+    <th style="text-align:left">Status</th>
+    <th style="text-align:left">Desired</th>
+    <th style="text-align:left">Running</th>
+    <th style="text-align:left">Pending</th>
+    <th style="text-align:left">Progress</th>
+    <th style="text-align:left">helathcheck</th>
+    <th style="text-align:left", colspan="2">Last 4 Events</th>
+</tr>
+</div> 
+</thead> 
+<tbody>
+<div id="service_table_data">
+{% for ser_name, ser_det in services.items %}
+<tr>
+    
+    <td rowspan="5">{{ser_det.serviceName}}</td>
+    <td rowspan="5">{{ser_det.serviceStatus}}</td>    
+    <td rowspan="5">{{ser_det.serviceDesiredCount}}</td>    
+    <td rowspan="5">{{ser_det.serviceRunningCount}}</td>    
+    <td rowspan="5">{{ser_det.servicePendingCount}}</td> 
+    <td rowspan="5">Deploying</td>  
+    <td rowspan="5">{{ser_det.healthCheck}}</td>
+
+        {% for ev in ser_det.events %}
+        <tr>
+            <td>{{ev.Event_Time}}</td>
+            <td>{{ev.Message}}</td>
+        </tr>
+        {% endfor %} 
+</tr>
+{% endfor %}
+</div>
+</tbody>
+
+</table>
+</br>
+<table id="instance_table" border = "1" cellpadding ="1" cellspacing = "1" style="width:75%"> 
+
+    <thead>
+    <div id="instance_table_heading">
+    <tr>
+        <th style="text-align:left">Id</th>
+        <th style="text-align:left">Status</th>
+        <th style="text-align:left">Running Task Count</th>
+        <th style="text-align:left">Pending Task Count</th>
+        <th style="text-align:left", colspan="4">Resources</th>
+    </tr>
+    </div> 
+    </thead> 
+    <tbody>
+    <div id="instance_table_data">
+    {% for ci_name, ci_det in cInstances.items %}
+    <tr>
+        
+        <td rowspan="5">{{ci_det.InstanceID}}</td>
+        <td rowspan="5">{{ci_det.InstanceStatus}}</td>    
+        <td rowspan="5">{{ci_det.RunningTasksCount}}</td>    
+        <td rowspan="5">{{ci_det.PendingTasksCount}}</td>    
+    
+            {% for res in ci_det.Resources %}
+            <tr>
+                <td>{{res.ResourceType}}</td>
+                <td>{{res.remaining}}</td>
+                <td>{{res.total}}</td>
+                <td>{{res.Usage}}</td>
+            </tr>
+            {% endfor %} 
+    </tr>
+    {% endfor %}
+    </div>
+    </tbody>
+    
+    </table>
+</div> <!-- div end of ecs block-->
+
+
+
+
+<script type="text/javascript">
+    function refresh() {
+        $.ajax({
+            type: "GET",
+            url: "{% url 'index' %}",
+            success: function(data) {
+                //$('#service_table').html(data);
+                //$('#instance_table').html(data);
+                $('#ecs').html(data); // NOTE this
+            },
+            error: function() {
+            alert('Error occured');
+        }
+        });
+    }
+    var seconds = 3; // seconds, edit here
+    setInterval(refresh(),seconds * 1000);
+</script>
+
+</body>
+</html>
+
+
+
+

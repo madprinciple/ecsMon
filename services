@@ -1,0 +1,1596 @@
+{
+	'services': [
+		{
+			'serviceArn': 'arn:aws:ecs:ap-southeast-1:047095494924:service/Blu-UAT-Mercury/mercury',
+			'serviceName': 'mercury',
+			'clusterArn': 'arn:aws:ecs:ap-southeast-1:047095494924:cluster/Blu-UAT-Mercury',
+			'loadBalancers': [
+				{
+					'targetGroupArn': 'arn:aws:elasticloadbalancing:ap-southeast-1:047095494924:targetgroup/Blu-Uat-Mercury-ELBTG/d324632de0977298',
+					'containerName': 'mercury-uat',
+					'containerPort': 3000
+				}
+			],
+			'serviceRegistries': [
+			],
+			'status': 'ACTIVE',
+			'desiredCount': 1,
+			'runningCount': 1,
+			'pendingCount': 0,
+			'launchType': 'EC2',
+			'taskDefinition': 'arn:aws:ecs:ap-southeast-1:047095494924:task-definition/mercury-uat:71',
+			'deploymentConfiguration': {
+				'maximumPercent': 200,
+				'minimumHealthyPercent': 100
+			},
+			'deployments': [
+				{
+					'id': 'ecs-svc/0958150646789518058',
+					'status': 'PRIMARY',
+					'taskDefinition': 'arn:aws:ecs:ap-southeast-1:047095494924:task-definition/mercury-uat:71',
+					'desiredCount': 1,
+					'pendingCount': 0,
+					'runningCount': 1,
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						12,
+						12,
+						2,
+						47,
+						403000,
+						tzinfo=tzlocal(
+						)
+					),
+					'updatedAt': datetime.datetime(
+						2020,
+						11,
+						18,
+						10,
+						22,
+						4,
+						787000,
+						tzinfo=tzlocal(
+						)
+					),
+					'launchType': 'EC2'
+				}
+			],
+			'roleArn': 'arn:aws:iam::047095494924:role/ecsServiceRole',
+			'events': [
+				{
+					'id': '4346c4bb-725c-43de-a95d-0c945b0c2f5b',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						19,
+						22,
+						25,
+						5,
+						431000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': 'e7044862-ba19-41e3-a547-b3a1c1b52f1e',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						19,
+						16,
+						24,
+						20,
+						161000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': '9a8b4209-e25d-46e8-a18a-03e9b65c9600',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						19,
+						10,
+						23,
+						42,
+						870000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': '70834284-bd5a-468e-a0c2-c62e633027ec',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						19,
+						4,
+						23,
+						16,
+						636000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': '9d4bc6fd-37b3-4787-94b4-58392d0e6c06',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						18,
+						22,
+						22,
+						38,
+						168000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': '07198d46-e026-4965-affb-a6e0f0bbc8d8',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						18,
+						16,
+						22,
+						33,
+						410000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': '4f994b80-3f53-43b5-a817-ba40d454fd19',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						18,
+						10,
+						22,
+						4,
+						792000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': '37263dc7-dce3-4adc-be28-6f558b66aa85',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						18,
+						10,
+						21,
+						54,
+						682000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has stopped 1 running tasks: (task 51259134e873465991372c99ef04560e).'
+				},
+				{
+					'id': 'cf429bc4-9cc8-4ef4-bed3-7cfbb3738844',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						18,
+						10,
+						21,
+						14,
+						732000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has stopped 2 running tasks: (task e6766bdc1c26402bbd9eeca2455328cc) (task a154dee16faf45e984e712de19ddafd0).'
+				},
+				{
+					'id': 'c8d08c25-b251-4c9d-b4b9-3924593bc6f4',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						18,
+						10,
+						20,
+						48,
+						133000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has begun draining connections on 1 tasks.'
+				},
+				{
+					'id': 'b0069d69-a3e2-41b7-afaa-f56941924f1f',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						18,
+						10,
+						20,
+						48,
+						132000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:ap-southeast-1:047095494924:targetgroup/Blu-Uat-Mercury-ELBTG/d324632de0977298)'
+				},
+				{
+					'id': '908efdcb-f2cd-41d2-a2d8-b102d9560e09',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						18,
+						10,
+						20,
+						6,
+						456000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has begun draining connections on 2 tasks.'
+				},
+				{
+					'id': '08a1bc8a-c00f-4d6c-8ee1-79dd27ab1636',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						18,
+						10,
+						20,
+						6,
+						455000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) deregistered 2 targets in (target-group arn:aws:elasticloadbalancing:ap-southeast-1:047095494924:targetgroup/Blu-Uat-Mercury-ELBTG/d324632de0977298)'
+				},
+				{
+					'id': '1f092ce8-a446-46f5-94a3-47806c8e0e8f',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						18,
+						7,
+						3,
+						58,
+						936000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': '74355954-ada6-434a-bcd9-a16a5bc2e58d',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						18,
+						1,
+						3,
+						54,
+						380000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': 'ab6036cc-f7ae-469c-a4bc-21e219de667a',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						17,
+						19,
+						3,
+						41,
+						362000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': '1ce108dd-18c3-482b-a221-eed19d21be20',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						17,
+						19,
+						3,
+						21,
+						134000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) registered 3 targets in (target-group arn:aws:elasticloadbalancing:ap-southeast-1:047095494924:targetgroup/Blu-Uat-Mercury-ELBTG/d324632de0977298)'
+				},
+				{
+					'id': '3b28b782-2037-4e0f-afc0-c1056966f60d',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						17,
+						19,
+						3,
+						10,
+						754000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has started 3 tasks: (task 51259134e873465991372c99ef04560e) (task a154dee16faf45e984e712de19ddafd0) (task e6766bdc1c26402bbd9eeca2455328cc).'
+				},
+				{
+					'id': '60a0971f-72ac-47f1-9be1-53cf2c340e0a',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						17,
+						18,
+						54,
+						5,
+						259000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': '397269f6-9d11-48cd-bfc0-c2a5ae17a25c',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						17,
+						18,
+						53,
+						45,
+						354000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) registered 1 targets in (target-group arn:aws:elasticloadbalancing:ap-southeast-1:047095494924:targetgroup/Blu-Uat-Mercury-ELBTG/d324632de0977298)'
+				},
+				{
+					'id': '4b483f7f-7638-4820-9590-284eaf72d647',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						17,
+						18,
+						53,
+						34,
+						858000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has started 1 tasks: (task 3e4a9c8cfd62430a9e2fab29398cad72).'
+				},
+				{
+					'id': 'ad4a12c6-1752-40b1-8758-fe7f89ecfb51',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						17,
+						18,
+						52,
+						59,
+						199000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has begun draining connections on 1 tasks.'
+				},
+				{
+					'id': '7197f35e-87f5-4dc6-8d4a-b1dc5a1a7551',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						17,
+						18,
+						52,
+						59,
+						185000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:ap-southeast-1:047095494924:targetgroup/Blu-Uat-Mercury-ELBTG/d324632de0977298)'
+				},
+				{
+					'id': '015d3f1c-4704-42fc-935f-d51cf4c23c94',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						17,
+						16,
+						51,
+						40,
+						983000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': 'b2941e04-7843-4a1e-92b4-908535a4e830',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						17,
+						16,
+						51,
+						31,
+						13000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has stopped 3 running tasks: (task 5a12879367d345ecb8e6b80dc82eec47) (task 9d58ad4746c24d3f989087741d290b02) (task c6d5b743fa88488eae2ce426db173a11).'
+				},
+				{
+					'id': '7f9c3539-9f0d-453e-91f1-2d314f9fa24e',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						17,
+						16,
+						50,
+						27,
+						578000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has begun draining connections on 3 tasks.'
+				},
+				{
+					'id': 'c529592c-b7e3-41c9-99bb-569a88c78b2f',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						17,
+						16,
+						50,
+						27,
+						577000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) deregistered 3 targets in (target-group arn:aws:elasticloadbalancing:ap-southeast-1:047095494924:targetgroup/Blu-Uat-Mercury-ELBTG/d324632de0977298)'
+				},
+				{
+					'id': 'bb01cabc-9547-4d39-b5d4-a2086acb2b2d',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						17,
+						16,
+						19,
+						37,
+						270000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': '596bcb2d-8666-4446-a58a-e2f29a1aba40',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						17,
+						16,
+						12,
+						4,
+						315000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) was unable to place a task because no container instance met all of its requirements. The closest matching (container-instance 92fe1153af89496a9fe701b7b26b3bc1) has insufficient memory available. For more information, see the Troubleshooting section of the Amazon ECS Developer Guide.'
+				},
+				{
+					'id': '4d6b62c4-3cec-43ba-b3aa-7251d88dca13',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						17,
+						15,
+						26,
+						54,
+						402000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': 'cab16d28-e9a8-4b1d-8f58-564b7ca25acd',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						17,
+						15,
+						26,
+						33,
+						999000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) registered 2 targets in (target-group arn:aws:elasticloadbalancing:ap-southeast-1:047095494924:targetgroup/Blu-Uat-Mercury-ELBTG/d324632de0977298)'
+				},
+				{
+					'id': '0c2e685d-07fc-482d-a6de-99c0a5a9d317',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						17,
+						15,
+						26,
+						22,
+						485000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has started 2 tasks: (task bf13be989e9d4408bc1f2ae4f827eaf9) (task c6d5b743fa88488eae2ce426db173a11).'
+				},
+				{
+					'id': '8ee5ac4d-6e05-41e6-afb6-46e0e94114bd',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						17,
+						15,
+						11,
+						50,
+						238000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': '845cf276-652b-4c6d-9c03-8692f8cf8268',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						17,
+						15,
+						11,
+						27,
+						283000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) was unable to place a task because no container instance met all of its requirements. The closest matching (container-instance 92fe1153af89496a9fe701b7b26b3bc1) has insufficient memory available. For more information, see the Troubleshooting section of the Amazon ECS Developer Guide.'
+				},
+				{
+					'id': '9f51c625-7896-4aae-8a5e-5cf1d2cb4dbe',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						17,
+						15,
+						11,
+						17,
+						732000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) registered 1 targets in (target-group arn:aws:elasticloadbalancing:ap-southeast-1:047095494924:targetgroup/Blu-Uat-Mercury-ELBTG/d324632de0977298)'
+				},
+				{
+					'id': '3cee9152-ae47-4db9-ba9d-5bb45c059563',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						17,
+						15,
+						11,
+						17,
+						619000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) was unable to place a task because no container instance met all of its requirements. The closest matching (container-instance 92fe1153af89496a9fe701b7b26b3bc1) has insufficient memory available. For more information, see the Troubleshooting section of the Amazon ECS Developer Guide.'
+				},
+				{
+					'id': '4ecd6f7c-441c-4b90-86fd-7e4f0a7ade91',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						17,
+						15,
+						11,
+						7,
+						170000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has started 1 tasks: (task 9d58ad4746c24d3f989087741d290b02).'
+				},
+				{
+					'id': 'b6f66194-65de-45f5-b5c3-162873fc9e0f',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						17,
+						15,
+						7,
+						46,
+						677000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': 'b22b65ea-e20e-40e2-a862-985bbe375e4b',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						17,
+						15,
+						7,
+						36,
+						418000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has stopped 1 running tasks: (task a300cd0e3d6042cfbf6ee4b42b625d70).'
+				},
+				{
+					'id': 'c65ca285-13ce-4849-af10-543ae36b67c0',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						17,
+						15,
+						6,
+						29,
+						317000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has begun draining connections on 1 tasks.'
+				},
+				{
+					'id': '2e2da1ef-8947-4742-b853-c4a932f4c7d4',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						17,
+						15,
+						6,
+						29,
+						316000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:ap-southeast-1:047095494924:targetgroup/Blu-Uat-Mercury-ELBTG/d324632de0977298)'
+				},
+				{
+					'id': '7c7c497c-9673-4319-a593-37444f7c8e48',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						17,
+						15,
+						4,
+						9,
+						327000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': '85d8844d-c731-4d7b-b719-3cf032c72a2c',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						17,
+						15,
+						3,
+						59,
+						671000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has stopped 1 running tasks: (task 4b41a58e8532433ba07fde41e7700793).'
+				},
+				{
+					'id': 'd24a4954-30c1-4116-a9bb-4269d82285e0',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						17,
+						15,
+						2,
+						49,
+						918000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has begun draining connections on 1 tasks.'
+				},
+				{
+					'id': '5cde73b3-b555-492d-975e-06950cfbdc15',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						17,
+						15,
+						2,
+						49,
+						917000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:ap-southeast-1:047095494924:targetgroup/Blu-Uat-Mercury-ELBTG/d324632de0977298)'
+				},
+				{
+					'id': '076459cd-f213-4763-96b8-ff78ed200771',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						17,
+						14,
+						59,
+						18,
+						884000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': '5da119d1-8cad-4776-9606-a92c0b51617b',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						17,
+						14,
+						59,
+						8,
+						891000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has stopped 1 running tasks: (task 41771493c02a47449a2a663a8f269e7e).'
+				},
+				{
+					'id': '5cbac728-ad21-4929-8fcd-344948775f59',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						17,
+						14,
+						58,
+						8,
+						634000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has begun draining connections on 1 tasks.'
+				},
+				{
+					'id': '88a8ada9-a041-4560-a366-79936f964fc5',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						17,
+						14,
+						58,
+						8,
+						633000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:ap-southeast-1:047095494924:targetgroup/Blu-Uat-Mercury-ELBTG/d324632de0977298)'
+				},
+				{
+					'id': 'e33aadea-8f98-4d59-badb-80bfabd99685',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						17,
+						14,
+						57,
+						28,
+						571000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) registered 3 targets in (target-group arn:aws:elasticloadbalancing:ap-southeast-1:047095494924:targetgroup/Blu-Uat-Mercury-ELBTG/d324632de0977298)'
+				},
+				{
+					'id': '21f94d9a-93ee-400b-8fd7-13f70a9e64a8',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						17,
+						14,
+						57,
+						17,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has started 3 tasks: (task 41771493c02a47449a2a663a8f269e7e) (task a300cd0e3d6042cfbf6ee4b42b625d70) (task 5a12879367d345ecb8e6b80dc82eec47).'
+				},
+				{
+					'id': 'fed3eac6-e867-4fed-8e1e-215db75bf041',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						17,
+						12,
+						23,
+						14,
+						490000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': '6d65f821-ed4e-4b40-8b93-759b54f38c84',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						17,
+						6,
+						22,
+						39,
+						284000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': '3b8e05c2-421c-4c84-a7cc-5985693636cb',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						17,
+						0,
+						22,
+						23,
+						193000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': '8eda5ee9-19e2-41d6-aed6-6b017c2d765f',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						16,
+						18,
+						22,
+						20,
+						71000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': '00259e29-6db1-4d4a-b290-04e3f0648d60',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						16,
+						12,
+						22,
+						7,
+						450000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': 'be2047d5-4160-42c9-917e-06c29d0048ae',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						16,
+						6,
+						21,
+						33,
+						589000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': '19a24a6e-76c4-42ca-8bb2-6426dbd98977',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						16,
+						0,
+						21,
+						21,
+						31000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': 'a8a8ddb7-eb6d-47b2-9e0f-c0858e13169b',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						15,
+						18,
+						20,
+						45,
+						840000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': 'a1411069-f93a-4476-96c0-1ac4b44f5e3c',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						15,
+						12,
+						20,
+						17,
+						801000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': '89868d5a-010e-4c06-b729-dd611ac57d78',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						15,
+						6,
+						19,
+						39,
+						837000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': '3677a61d-5d72-4293-98a1-0892c0c66e30',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						15,
+						0,
+						19,
+						15,
+						321000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': '180f6425-1cf8-4f3c-ab16-6f454a754f6a',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						14,
+						18,
+						18,
+						38,
+						891000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': '75665333-ed48-4cb1-8c2e-3c3806dc5cde',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						14,
+						12,
+						18,
+						9,
+						689000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': 'b8453838-c180-47ef-adac-ff95df8c2588',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						14,
+						6,
+						17,
+						59,
+						832000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': '00aa4371-131e-4af5-9244-84373821532f',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						14,
+						0,
+						17,
+						28,
+						898000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': 'd4c82e92-9ef3-47b5-a0d4-d01c3fb76bcb',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						13,
+						18,
+						17,
+						10,
+						733000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': '06cdc7a8-552b-45e7-9c2e-4b113a0f63c8',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						13,
+						12,
+						16,
+						59,
+						692000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': '2e84376e-97b7-48f9-86c8-780c641b74cd',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						13,
+						6,
+						16,
+						52,
+						144000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': 'f9f58da4-b8e6-400e-94de-a74732e124e9',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						13,
+						0,
+						16,
+						16,
+						510000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': 'e6ed49e8-b531-4d74-a59d-362da344d44a',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						12,
+						18,
+						16,
+						0,
+						47000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': '331a1909-df0b-427a-96aa-99610dd4cc5d',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						12,
+						12,
+						15,
+						15,
+						369000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': 'fe1b52ab-1744-41a8-9154-5e0a3dcac7d3',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						12,
+						12,
+						15,
+						1,
+						977000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has stopped 1 running tasks: (task a866eda601304c6892d41839ec0d920a).'
+				},
+				{
+					'id': '4a03d599-7cea-4692-bc25-16778f74b05c',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						12,
+						12,
+						14,
+						1,
+						328000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has begun draining connections on 1 tasks.'
+				},
+				{
+					'id': '8fa757b2-3d3c-4c70-8def-112ad9d26ed9',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						12,
+						12,
+						14,
+						1,
+						327000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:ap-southeast-1:047095494924:targetgroup/Blu-Uat-Mercury-ELBTG/d324632de0977298)'
+				},
+				{
+					'id': '9dee41f3-778b-43f3-8bf9-8057d6b219d0',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						12,
+						12,
+						8,
+						39,
+						844000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) registered 1 targets in (target-group arn:aws:elasticloadbalancing:ap-southeast-1:047095494924:targetgroup/Blu-Uat-Mercury-ELBTG/d324632de0977298)'
+				},
+				{
+					'id': '9c1c9fb6-fb04-41b6-a844-ac0ac744bc6b',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						12,
+						12,
+						2,
+						57,
+						950000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has started 1 tasks: (task 4b41a58e8532433ba07fde41e7700793).'
+				},
+				{
+					'id': '3c36ed83-5762-4f2c-ac40-838761f3e3f3',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						12,
+						9,
+						23,
+						52,
+						309000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': 'fc1e7d73-33df-460d-bb13-3bcac73ec2dc',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						12,
+						3,
+						23,
+						15,
+						151000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': '1a9259ea-9031-4d29-981a-cf498ebfcb76',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						11,
+						21,
+						23,
+						5,
+						225000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': 'c1b050cc-e7a1-44ea-bd4f-ccfd4744595c',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						11,
+						15,
+						23,
+						0,
+						621000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': '5299d3b4-fff0-4337-804c-4facdc3bd5c9',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						11,
+						9,
+						22,
+						20,
+						42000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': '107f401f-11c7-41bc-b640-8d880a50acef',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						11,
+						3,
+						21,
+						50,
+						885000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': 'f9acb467-2ad5-4a10-8d6c-7e8977d6dd5c',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						10,
+						21,
+						21,
+						39,
+						511000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': 'cae1223e-efe9-4aae-ba78-2c8b420676dc',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						10,
+						15,
+						21,
+						22,
+						668000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': '979bada9-7d2e-4ac7-94d2-8fa9684a7b43',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						10,
+						9,
+						20,
+						51,
+						824000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': '2b779136-d5e9-42fe-ace7-07896a8765ec',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						10,
+						9,
+						20,
+						32,
+						83000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has stopped 1 running tasks: (task 99f6757f912a496ca60d3d2ae75f5708).'
+				},
+				{
+					'id': '4bd11bc7-205b-45ac-89e5-bc43ab34d132',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						10,
+						9,
+						19,
+						22,
+						336000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has begun draining connections on 1 tasks.'
+				},
+				{
+					'id': 'b7ed856e-a28b-4289-8256-2bb425da804c',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						10,
+						9,
+						19,
+						22,
+						335000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:ap-southeast-1:047095494924:targetgroup/Blu-Uat-Mercury-ELBTG/d324632de0977298)'
+				},
+				{
+					'id': '49b32c50-125c-42a4-9d09-afee36827e70',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						10,
+						9,
+						18,
+						42,
+						144000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) registered 1 targets in (target-group arn:aws:elasticloadbalancing:ap-southeast-1:047095494924:targetgroup/Blu-Uat-Mercury-ELBTG/d324632de0977298)'
+				},
+				{
+					'id': '71b170b9-5426-4cad-b03d-c1d32e94bcb3',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						10,
+						9,
+						18,
+						31,
+						835000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has started 1 tasks: (task a866eda601304c6892d41839ec0d920a).'
+				},
+				{
+					'id': '11cd6b6d-0e1c-4047-8f1e-805409bbe84b',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						10,
+						6,
+						14,
+						31,
+						410000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': 'c8474cb9-78d8-4439-8af6-9f1097047aa6',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						10,
+						0,
+						14,
+						31,
+						366000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': 'bfcf2ed8-fd93-4435-a649-92a2cd0e7045',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						9,
+						18,
+						14,
+						26,
+						697000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				},
+				{
+					'id': '64ca9ff1-d5c7-411c-be81-6b85957e421e',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						9,
+						18,
+						14,
+						5,
+						785000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has stopped 1 running tasks: (task 00536ff61dda4d618e22d8c8528fd8e9).'
+				},
+				{
+					'id': 'c2c927b5-d66a-43e5-9063-7e834eb63d60',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						9,
+						18,
+						12,
+						56,
+						491000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has begun draining connections on 1 tasks.'
+				},
+				{
+					'id': 'c971578a-610e-4f5c-ba74-cdb6d9f4145f',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						9,
+						18,
+						12,
+						56,
+						490000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:ap-southeast-1:047095494924:targetgroup/Blu-Uat-Mercury-ELBTG/d324632de0977298)'
+				},
+				{
+					'id': '00dea9e5-7776-4f8a-9ace-eff1e46eba19',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						9,
+						18,
+						12,
+						14,
+						110000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) registered 1 targets in (target-group arn:aws:elasticloadbalancing:ap-southeast-1:047095494924:targetgroup/Blu-Uat-Mercury-ELBTG/d324632de0977298)'
+				},
+				{
+					'id': '12996d0c-91d2-44a9-a564-8f3c9981eac2',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						9,
+						18,
+						12,
+						9,
+						559000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has started 1 tasks: (task 99f6757f912a496ca60d3d2ae75f5708).'
+				},
+				{
+					'id': '68e19502-7351-4a56-8e0a-db270b8e489a',
+					'createdAt': datetime.datetime(
+						2020,
+						11,
+						9,
+						17,
+						56,
+						36,
+						670000,
+						tzinfo=tzlocal(
+						)
+					),
+					'message': '(service mercury) has reached a steady state.'
+				}
+			],
+			'createdAt': datetime.datetime(
+				2020,
+				11,
+				8,
+				14,
+				15,
+				31,
+				765000,
+				tzinfo=tzlocal(
+				)
+			),
+			'placementConstraints': [
+			],
+			'placementStrategy': [
+			],
+			'healthCheckGracePeriodSeconds': 0,
+			'schedulingStrategy': 'REPLICA',
+			'createdBy': 'arn:aws:iam::047095494924:user/blu-admin-anton',
+			'enableECSManagedTags': False,
+			'propagateTags': 'NONE'
+		}
+	],
+	'failures': [
+	],
+	'ResponseMetadata': {
+		'RequestId': '262034a9-b22f-4725-8bca-ec47d2b50696',
+		'HTTPStatusCode': 200,
+		'HTTPHeaders': {
+			'x-amzn-requestid': '262034a9-b22f-4725-8bca-ec47d2b50696',
+			'content-type': 'application/x-amz-json-1.1',
+			'content-length': '18704',
+			'date': 'Thu, 19 Nov 2020 18:01:14 GMT'
+		},
+		'RetryAttempts': 0
+	}
+}

@@ -1,0 +1,43 @@
+<h1>Welcome to the ECS Dashboard</h1>
+{{services.items}}<br/>
+<br></br>
+<table border = "1" cellpadding ="1" cellspacing = "1" style="width:75%"> 
+
+<div>
+<tr>
+    <th style="text-align:left">Name</th>
+    <th style="text-align:left">Status</th>
+    <th style="text-align:left">Desired</th>
+    <th style="text-align:left">Running</th>
+    <th style="text-align:left">Pending</th>
+    <th style="text-align:left">Progress</th>
+    <th style="text-align:left">helathcheck</th>
+    <th style="text-align:left", colspan="2">Last 4 Events</th>
+    
+
+</tr>
+</div>
+
+<div>
+{% for ser_name, ser_det in services.items %}
+<tr>
+    
+    <td rowspan="5">{{ser_det.serviceName}}</td>
+    <td rowspan="5">{{ser_det.serviceStatus}}</td>    
+    <td rowspan="5">{{ser_det.serviceDesiredCount}}</td>    
+    <td rowspan="5">{{ser_det.serviceRunningCount}}</td>    
+    <td rowspan="5">{{ser_det.servicePendingCount}}</td> 
+    <td rowspan="5">Deploying</td>  
+    <td rowspan="5">{{ser_det.healthCheck}}</td>
+
+        {% for ev in ser_det.events %}
+        <tr>
+            <td>{{ev.Event_Time}}</td>
+            <td>{{ev.Message}}</td>
+        </tr>
+        {% endfor %} 
+</tr>
+{% endfor %}
+</table>
+
+</div>

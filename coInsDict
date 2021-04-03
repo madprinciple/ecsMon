@@ -1,0 +1,22 @@
+{
+	'i-0b7f6d2202077f82a': {
+		'InstanceID': 'i-0b7f6d2202077f82a',
+		'InstanceStatus': 'ACTIVE',
+		'RunningTasksCount': 2,
+		'PendingTasksCount': 0,
+		'Resources': [
+			{
+				'ResourceType': 'CPU',
+				'remaining': 512,
+				'total': 1024,
+				'Usage': 50.0
+			},
+			{
+				'ResourceType': 'MEMORY',
+				'remaining': 527,
+				'total': 983,
+				'Usage': 46.38860630722279
+			}
+		]
+	}
+}

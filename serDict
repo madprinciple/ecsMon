@@ -1,0 +1,105 @@
+{
+	'mercury': {
+		'serviceName': 'mercury',
+		'serviceStatus': 'ACTIVE',
+		'serviceDesiredCount': 1,
+		'serviceRunningCount': 1,
+		'servicePendingCount': 0,
+		'events': [
+			{
+				'Event0_Time': datetime.datetime(
+					2020,
+					11,
+					26,
+					23,
+					55,
+					59,
+					769000,
+					tzinfo=tzlocal(
+					)
+				),
+				'Message0': '(service mercury) has reached a steady state.'
+			},
+			{
+				'Event1_Time': datetime.datetime(
+					2020,
+					11,
+					26,
+					17,
+					55,
+					39,
+					206000,
+					tzinfo=tzlocal(
+					)
+				),
+				'Message1': '(service mercury) has reached a steady state.'
+			},
+			{
+				'Event2_Time': datetime.datetime(
+					2020,
+					11,
+					26,
+					11,
+					55,
+					13,
+					586000,
+					tzinfo=tzlocal(
+					)
+				),
+				'Message2': '(service mercury) has reached a steady state.'
+			}
+		]
+	},
+	'wms-worker': {
+		'serviceName': 'wms-worker',
+		'serviceStatus': 'ACTIVE',
+		'serviceDesiredCount': 1,
+		'serviceRunningCount': 1,
+		'servicePendingCount': 
+0,
+		'events': [
+			{
+				'Event0_Time': datetime.datetime(
+					2020,
+					11,
+					26,
+					23,
+					55,
+					36,
+					433000,
+					tzinfo=tzlocal(
+					)
+				),
+				'Message0': '(service wms-worker) has reached a steady state.'
+			},
+			{
+				'Event1_Time': datetime.datetime(
+					2020,
+					11,
+					26,
+					17,
+					55,
+					12,
+					381000,
+					tzinfo=tzlocal(
+					)
+				),
+				'Message1': '(service wms-worker) has reached a steady state.'
+			},
+			{
+				'Event2_Time': datetime.datetime(
+					2020,
+					11,
+					26,
+					11,
+					54,
+					48,
+					658000,
+					tzinfo=tzlocal(
+					)
+				),
+				'Message2': '(service wms-worker) has reached a steady state.'
+			}
+		]
+	}
+}
